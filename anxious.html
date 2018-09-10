@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html>
+
+<!--Meditation page: embed videos of relaxing
+                    music, timer-->
+<!--Images page: cute pics of us + pets + family,
+                cute animals, nature/sky pics-->
+<!--Activities page: divs with activities for
+                    different seasons, times of day,
+                    moods, etc-->
+
+  <head>
+
+    <title>Home - Mechie's Corner</title>
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300" rel="stylesheet">
+
+<!--start CSS here-->
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    .container {
+        display:grid;
+        grid-template-rows:repeat(3, auto);
+        width:100%;
+        align-items:center;
+        background-image: url("https://orig00.deviantart.net/3051/f/2014/287/c/1/animated_nature_background_by_agifarclor-d8204ru.gif");
+        background-size:cover;
+    }
+    .header {
+        display:grid;
+        grid-template-rows:repeat(5, auto);
+        justify-items:center;
+        text-align:center;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+    }
+    #title {
+        font-size:30pt;
+    }
+    .nav {
+        font-size:16pt;
+    }
+    .main {
+        display:grid;
+        grid-gap:50px;
+        grid-template-columns:repeat(3, 1fr);
+        text-align:center;
+        font-family:"Calibri", sans-serif;
+        align-items:center;
+        justify-items:center;
+        padding-top:100px;
+        padding-bottom:100px;
+        max-width:100%;
+    }
+    .main img {
+        height:200px;
+        width:200px;
+    }
+    .meditation-intro {
+        background-color:rgba(255,255,255,.5);
+        max-width:500px;
+        border-radius: 30px;
+        grid-column: 1/4;
+        padding:30px;
+        padding-bottom:40px;
+    }
+    .meditation-intro h3 {
+        padding:20px;
+    }
+    #quote {
+        text-align:left;
+    }
+    #quote-source {
+        text-align:right;
+    }
+    #step-1, #step-2, #step-3, #step-4, #step-5 {
+        grid-column:1/4;
+        background-color:rgba(255,255,255,.5);
+        border-radius: 30px;
+        padding:20px;
+    }
+    #chair {
+        position:relative;
+        border-radius:100%;
+        left:100px;
+    }
+    #cross-legged {
+        position:relative;
+        border-radius:100%;
+        right:100px;
+    }
+    .footer {
+        display:grid;
+        grid-template-rows:repeat(2, auto);
+        align-items:center;
+        justify-items:center;
+        justify-content:center;
+        background-color:rgba(255,255,255,.5);
+        padding:20px;
+        font-family:"Calibri", sans-serif;
+        font-weight:bold;
+        border-radius: 30px;
+    }
+    .footer img {
+        max-height:300px;
+        max-width:300px;
+        border-radius: 20px;
+    }
+    </style>
+
+<!--end CSS here-->
+
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="header">
+            <div id="title">
+                <h1>MECHIE'S SOUL GARDEN</h1>
+            </div>
+            <div class="nav">
+                <h4>Anxious?</h4>
+                <h4>Sad?</h4>
+                <h4>Bored?</h4>
+            </div>
+        </div>
+        <div class="main">
+            <div class="meditation-intro">
+                <h3>Meditation</h3>
+                <p id="quote">
+                    “My mind begins to seem like a video game: I can either play it intelligently, learning more in each round, or I can be killed in the same spot by the same monster, again and again.”                
+                </p>
+                <p id="quote-source">
+                    -Sam Harris
+                </p>
+                <br><p id="quote">
+                    "Feelings come and go like clouds in a windy sky. Conscious breathing is my anchor." 
+                </p>
+                <p id="quote-source">
+                    -Thích Nhat Hanh
+                </p>
+            </div>
+            <div id="step-1">
+                <p>STEP 1: Pick your background sounds (optional)</p>
+            </div>
+            <p><strong>AMBIENT</strong></p>
+            <p><strong>RAIN</strong></p>
+            <p><strong>MYSTICAL</strong></p>
+            <div id="video-1">
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/WPni755-Krg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+            <div id="video-2">
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/jX6kn9_U8qk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+            <div id="video-3">
+                <iframe width="200" height="200" src="https://www.youtube.com/embed/MMtZlX1L7rs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+            </div>
+            <div id="step-2">
+                <p>STEP 2: Sit cross-legged or on a chair with your spine erect</p>
+            </div>
+            <img id="chair" src="https://i.pinimg.com/originals/c5/45/47/c5454737ca2a114a64013653e4626903.jpg">
+            <div>
+                <strong>OR</strong>
+            </div>
+            <img id="cross-legged" src="https://www.westernchanfellowship.org/fileadmin/_processed_/4/a/csm_lotus_075a89b26c.jpg">
+            <div id="step-3">
+                <p>STEP 3: Set a timer</p>
+            </div>
+            <div id="step-4">
+                <p>STEP 4: Close your eyes and focus only on your breathing</p>
+            </div>
+            <div id="step-5">
+                <strong>That's it!</strong>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <img src="https://previews.dropbox.com/p/thumb/AAIhiJEG4HDGWkjus655gZF9DkvRJ2v3GvLby6KrNqlub4g7VaQR3iAcXcv4ACbIbhM3ojKeveQT25E2BwRykQVAlZXBIfVH5x_OFL82Xw50naxcoHhGB7qdck4WXOk89SQpkrabGaPKE20LletFQ5UqvacXUncTKgCNJUIx1y9tQg/p.jpeg?size=800x600&size_mode=3">            
+            </div>
+            <div>
+                Created with love by Josh Akins 💕
+            </div>
+        </div>
+    </div>
+
+  </body>
+<html>
